@@ -4,9 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/aaa")
+@RequestMapping("/main")
 public class TextController {
-	@RequestMapping("/bbb.do")
+	@RequestMapping("/showIndex.do")
 	public String showSome(){
 		
 		return "index";
