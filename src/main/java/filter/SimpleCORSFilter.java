@@ -31,6 +31,8 @@ public class SimpleCORSFilter implements Filter {
 	            HttpServletRequest httpServletRequest = (HttpServletRequest) request;
 	            HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 	            System.out.println("拦截请求: " + httpServletRequest.getServletPath());
+	            System.out.println("URI: " + httpServletRequest.getRequestURI());
+	            System.out.println("域名: " + httpServletRequest.getServerName());
 	            httpServletResponse.setHeader("Access-Control-Allow-Origin", "*");
 	            httpServletResponse.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
 	            httpServletResponse.setHeader("Access-Control-Max-Age", "0");
