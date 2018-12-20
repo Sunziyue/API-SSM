@@ -47,6 +47,24 @@
 		<!-- 注解驱动 -->
 		<mvc:annotation-driven />
 		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	<!-- 配置上传文件的组件 id的值必须为"multipartResolver" -->
 <!-- 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> -->
 		<!-- 配置最大的上传文件10兆 -->
