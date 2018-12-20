@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TextController {
 	@RequestMapping("/showIndex.do")
 	public String showSome(){
-		
 		return "index";
-		
 	}
 }

@@ -31,9 +31,17 @@
 		<context:component-scan base-package="service" />
 			
 		<!-- 配置ViewResolver视图解析器 -->
-		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-			<property name="prefix" value="/WEB-INF/web/" />
-			<property name="suffix" value=".jsp" />
+		<bean  id="html" class="org.springframework.web.servlet.view.InternalResourceViewResolver"  >
+	        <property name="order" value="1" />
+	        <property name="contentType" value="text/html"/>
+	        <property name="prefix" value="/WEB-INF/"></property>
+	        <property name="suffix" value=".html"/>
+	    </bean>
+	    <bean id="jsp"  class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+	        <property name="order" value="2" />
+	        <property name="contentType" value="text/html"/>
+	        <property name="prefix" value="/WEB-INF/"/>
+	        <property name="suffix" value=".jsp"/>
 		</bean>
 		
 		<!-- 注解驱动 -->
