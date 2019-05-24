@@ -46,7 +46,6 @@
 		
 		<!-- 注解驱动 -->
 		<mvc:annotation-driven />
-		<mvc:resources location="/dist/" mapping="/dist/**" />
 		
 
 		
